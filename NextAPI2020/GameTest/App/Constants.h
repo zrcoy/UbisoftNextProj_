@@ -1,0 +1,38 @@
+#pragma once
+
+
+enum CollisionMask
+{
+    UI_ELEMENT = 0,
+    PLAYER = 1,
+    ENEMY = 2,
+    PROJECTILE_ENEMY = 4,
+    VEGETATION = 8,
+    LEVEL_COMPLETE = 16,
+    TILE = 32,
+    PROJECTILE_PLAYER = 64,
+};
+
+enum CollisionType
+{
+    NO_COLLISION = 0,
+    PLAYER_ENEMY_COLLISION = PLAYER | ENEMY,//0001|0010 = 0011
+    PLAYER_PEOJECTILE_COLLISION = PLAYER | PROJECTILE_ENEMY,//player only care about projectile hit from enemy
+    ENEMY_PROJECTILE_COLLISION = ENEMY | PROJECTILE_PLAYER,
+    PLAYER_VEGETATION_COLLISION = PLAYER | VEGETATION,
+    PLAYER_LEVEL_COMPLETE_COLLISION = PLAYER | LEVEL_COMPLETE
+};
+
+
+enum LayerType
+{
+    TILEMAP_LAYER = 0,
+    VEGETATION_LAYER = 1,
+    ENEMY_LAYER = 2,
+    OBSTACLE_LAYER = 3,
+    PROJECTILE_LAYER = 4,
+    PLAYER_LAYER = 5,
+    UI_LAYER = 6,
+};
+
+const unsigned int NUM_LAYERS = 7;
