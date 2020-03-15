@@ -1,14 +1,27 @@
-﻿  GameTest.cpp
-C:\Users\zhang\OneDrive\Desktop\Next\Next_Ubisoft\NextAPI2020\GameTest\App\Entity.h(37,52): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+﻿  stdafx.cpp
+  app.cpp
+  Component.cpp
+  SpriteComponent.cpp
+  TransformationComponent.cpp
+  Entity.cpp
+  EntityManager.cpp
+  main.cpp
+  SimpleController.cpp
+  SimpleSound.cpp
+  SimpleSprite.cpp
+  TextureLoader.cpp
+  GameTest.cpp
+C:\Users\zhang\OneDrive\Desktop\NextAPI2020\GameTest\App\Entity.h(37,52): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
           with
           [
               _Ty=int
           ]
-C:\Users\zhang\OneDrive\Desktop\Next\Next_Ubisoft\NextAPI2020\GameTest\GameTest.cpp(59): message : see reference to function template instantiation 'T &Entity::AddComponent<TransformationComponent,vec2,vec2,vec2,int>(vec2 &&,vec2 &&,vec2 &&,int &&)' being compiled
+C:\Users\zhang\OneDrive\Desktop\NextAPI2020\GameTest\GameTest.cpp(59): message : see reference to function template instantiation 'T &Entity::AddComponent<TransformationComponent,vec2,vec2,vec2,int>(vec2 &&,vec2 &&,vec2 &&,int &&)' being compiled
           with
           [
               T=TransformationComponent
           ]
-  GameTest.vcxproj -> C:\Users\zhang\OneDrive\Desktop\Next\Next_Ubisoft\NextAPI2020\x64\Debug\GameTest.exe
-  C:\Users\zhang\OneDrive\Desktop\Next\Next_Ubisoft\NextAPI2020\\GameTest\glut\bin\x64\freeglut.dll
+  Generating Code...
+  GameTest.vcxproj -> C:\Users\zhang\OneDrive\Desktop\NextAPI2020\x64\Debug\GameTest.exe
+  C:\Users\zhang\OneDrive\Desktop\NextAPI2020\\GameTest\glut\bin\x64\freeglut.dll
   1 File(s) copied
